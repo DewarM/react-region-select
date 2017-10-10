@@ -83,6 +83,10 @@ Use for styling the outer layer
 
 Use for styling the outer layer
 
+#### regionStyle (object)
+
+Use for styling each region. 
+
 #### children (object)
 
 Place objects inside the component and the regions will appear above them.
