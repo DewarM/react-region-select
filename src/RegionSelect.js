@@ -237,6 +237,7 @@ class RegionSelect extends Component {
 			dataRenderer={this.props.regionRenderer}
 			onCropStart={(event) => this.onRegionMoveStart(event, index)}
 			changing={index === this.regionChangeIndex}
+			style={this.props.regionStyle}
 		/>;
 	}
 	render () {
@@ -279,13 +280,14 @@ RegionSelect.propTypes = {
 	maxRegions: PropTypes.number,
 	debug: PropTypes.bool,
 	className: PropTypes.string,
-	style: PropTypes.object
+	style: PropTypes.object,
+	regionStyle: PropTypes.object
 };
 RegionSelect.defaultProps = {
 	maxRegions: Infinity,
 	debug: false,
 	regions: [],
-	constraint: false
+	constraint: false,
 };
 
 function isSubElement (el, check) {

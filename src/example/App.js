@@ -44,7 +44,7 @@ class App extends Component {
 	render() {
 		return (
 			<div style={{textAlign: 'center'}}>
-				<RegionSelect constraint={true} maxRegions={1} regions={this.state.regions} onChange={this.onChange} regionRenderer={this.regionRenderer}>
+				<RegionSelect showIndex={true} regionStyle={{backgroundColor: 'rgba(0,0,0,0.5)'}} constraint={true} maxRegions={1} regions={this.state.regions} onChange={this.onChange} regionRenderer={this.regionRenderer}>
 					<img src='/static/example-doc.jpg' width='700px' style={{border: '1px black solid'}}/>
 				</RegionSelect>
 			</div>
